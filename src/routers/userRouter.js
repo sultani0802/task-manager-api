@@ -34,7 +34,7 @@ router.get('/users/me', auth, async (req, res) => {
 router.get('/users/:id/avatar', async (req, res) => {
     try {
         const user = await User.findById(req.params.id)             // Fetch the User Document from the DB
-
+        
         if (!user || !user.avatar) {                                // If the User or image is null
             throw new Error('User or avatar doesn\'t exist')            // Respond with an error
         }
@@ -69,7 +69,7 @@ router.get('/users/:id/avatar', async (req, res) => {
     const isValidOperation = updates.every((key) => {
         return allowedUpdates.includes(key)
     })
-
+    
     if (!isValidOperation) {
         return res.status(400).send({error : 'You are trying to update a User property that is not allowed or doesn\'t exist'})
     }
@@ -109,12 +109,6 @@ router.post('/users', async (req, res) => {
     } catch (e) {
         res.status(400).send(e)
     }
-    
-    // user.save().then(() => {            // Save to DB
-    //     res.status(201).send(user)                      // Respond to user
-    // }).catch((error) => {               // Error occurred
-    //     res.status(400).send(error)         // Set status & send error
-    // })
 })
 
 
@@ -206,6 +200,7 @@ const upload = multer({     // Options object for upload
  * Parameters:
  *      upload.single('avatarUpload'): multer middleware; 'avatarUpload' is the name of the file that we should be               receiving
  */
+
 router.post('/users/me/avatar', auth, upload.single('avatarUpload'), async (req, res) => {
     const buffer = await sharp(req.file.buffer)         // Store the modified output from sharp
     .resize( {width: 250, height: 250} )                // resize the image (we wouldn't do this if we had a front-end, we would do                                                         the resizing on the app itself)

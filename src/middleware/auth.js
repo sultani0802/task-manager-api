@@ -19,7 +19,7 @@ const auth = async (req, res, next) => {
         if (!user) {                                                                    // If the _id or token doesn't exist
             throw new Error()                                                               // throw error
         }
-
+        
         req.user = user                                                                 // Add the User Document into the req so that it can be passed to the router
         req.token = token                                                               // Add the token into the req so that it can be passed to the router
         next()

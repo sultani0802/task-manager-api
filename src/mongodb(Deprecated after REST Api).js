@@ -25,28 +25,6 @@ MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) =>
 
     const db = client.db(databaseName)                              // Reference to the db (creating it if it doesn't already exist)
 
-    // Promise to update 1 Document
-    // db.collection('users').updateOne({ _id: new ObjectID('5ce48d6746a9763cded61e62')}, {
-    //     $inc: {
-    //         age: 1
-    //     }
-    // }).then((result) => {
-    //     log(result)
-    // }).catch((error) => { 
-    //     log(error)
-    // })
-
-    // Update all Documents in 'tasks' db that are not completed
-    // db.collection('tasks').updateMany({ completed: false}, {
-    //     $set: {
-    //         completed: true
-    //     }
-    // }).then((result) => {
-    //     log(result)
-    // }).catch((error) => {
-    //     log(error)
-    // })
-
 
     db.collection('tasks').deleteOne({
         description: 'print'

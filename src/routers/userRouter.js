@@ -102,7 +102,7 @@ router.post('/users', async (req, res) => {
     
     try {
         await user.save()                               // Save the User Document
-        sendWelcomeEmail(user.email, user.name)         // Send welcome email
+        //sendWelcomeEmail(user.email, user.name)         // Send welcome email
         const newToken = await user.generateAuthToken() // Generate new auth token
 
         res.status(201).send( {user, newToken} )        // Respond with the User Document and the auth token
@@ -234,7 +234,7 @@ router.delete('/users/me/avatar', auth, async (req, res) => {
 router.delete('/users/me', auth, async (req, res) => {
     try {
         await req.user.remove()                                         // Delete the User Document from the database
-        sendCancelEmail(req.user.email, req.user.name)
+        //sendCancelEmail(req.user.email, req.user.name)
         res.send(req.user)                                                  // Success, send User Document back in the response
     } catch (e) {
         res.status(500).send()

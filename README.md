@@ -4,10 +4,16 @@
 Task Manager is a web application that allows you to create users and tasks. I created this app to learn how to create a RESTful service and features encryption, a MongoDB database, a Test Suite, middleware such as authentication, environment variables, library mocking, and other Node.js tools.
 
 ## Requirements
-- lhdjkahwd 
+- Node 12
+- npm
+- Postman (or API tester of your choice)
 
-## Feature List
-#### 
+## Installation
+Clone the repo and install the dependencies
+    git clone https://github.com/sultani0802/task-manager-api
+    cd task-manager-api
+    
+    npm install
     
 #### Keep track of all the food in your kitchen
     - All your food is organized into 3 separate categories (Expired, Fresh, All).  

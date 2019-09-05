@@ -34,3 +34,6 @@ Task Manager is a web application that allows you to create users and tasks. I c
     - You should see this message in your terminal if everything was successful
 
 ![Successful run](/ss_1.png)
+
+#### Test Suite
+    - Tests can be run by typing 'npm test' in terminal

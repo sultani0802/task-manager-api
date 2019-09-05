@@ -117,10 +117,3 @@ test('Should not create task with invalid description', async () => {
         })
         .expect(400)
 })
-
-
-test('Should fetch task by id', async () => {
-    await request(app)
-        .get(`/tasks/${taskOne._id}`)
-        .set('Authorization', `Bearer ${}`)
-})

@@ -32,4 +32,5 @@ Task Manager is a web application that allows you to create users and tasks. I c
     - In terminal, change directory to where you cloned task-manager-api
     - In terminal, type 'npm run dev' to start the server
     - You should see this message in your terminal if everything was successful
-        ![](/ss_1.png)
+
+(/ss_1.png)

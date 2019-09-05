@@ -17,6 +17,12 @@ Task Manager is a web application that allows you to create users and tasks. I c
     npm install
 
 
-## How to
-### Step 1 - Make A List And Check It Twice
-First, you add the items you need to your Shopping List and you "Load" the item once you have loaded the Item into your cart. When you're done shopping, "Unload" to clear the list of all the stuff you purchased which will also add it to your Kitchen.
+## How to...
+### Run locally
+
+#### Step 1 - Download/Install MongoDB Community Server
+    - https://www.mongodb.com/download-center/community
+    - Unzip in /Users/user_name
+    - Create a new "data" folder in /mongodb-data
+    - In terminal, run this command: /Users/user_name/mongodb/bin/mongod --dbpath=/Users/user_name/mongodb-data/
+        - replace <user_name> with your username

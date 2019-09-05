@@ -26,3 +26,10 @@ Task Manager is a web application that allows you to create users and tasks. I c
     - Create a new "data" folder in /mongodb-data
     - In terminal, run this command: /Users/user_name/mongodb/bin/mongod --dbpath=/Users/user_name/mongodb-data/
         - replace <user_name> with your username
+        
+
+#### Step 2 - Run the web server
+    - In terminal, change directory to where you cloned task-manager-api
+    - In terminal, type 'npm run dev' to start the server
+    - You should see this message in your terminal if everything was successful
+        ![](/ss_1.png)

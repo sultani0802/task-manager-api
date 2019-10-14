@@ -39,7 +39,8 @@ if (pm.response.code === 200) {
 `Create User` & `Login User`
 
 ## User Routes
-### - Create User (POST) `{{url}}/users`
+### - Create User (POST) 
+`Endpoint` : {{url}}/users
 `Headers` :  Content-Type : application/json
 
 `Body` (JSON)

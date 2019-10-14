@@ -8,6 +8,13 @@ Task Manager is a web application that allows you to create users and tasks. I c
 - npm
 - Postman (or API tester of your choice)
 
+## Using Task Manager
+### Introduction
+Task Manager RESTful web service can be used via an API tester. Postman was used to test and use Task Manager so the setup and usage detailed below will be specific to Postman. Though, the API is hosted on Heroku and is accessible from any client.
+
+#### User Routes
+
+
 ## Installation
 #### Clone the repo and install the dependencies
     
@@ -37,3 +44,6 @@ Task Manager is a web application that allows you to create users and tasks. I c
 
 #### Test Suite
     - Tests can be run by typing 'npm test' in terminal
+
+
+

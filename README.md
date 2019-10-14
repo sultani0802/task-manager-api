@@ -126,7 +126,42 @@ avatarUpload : image.jpg
 
 `Authorization` : Inherit auth from parent
 
+## Task Routes (POST)
+### - Create Task
+`Endpoint` : {{url}}/tasks
 
+`Authorization` : Inherit auth from parent
+
+`Headers` :  Content-Type : application/json
+
+`Body` (JSON)
+```json
+{
+"completed" : <boolean>
+}
+```
+
+## Task Routes (UPDATE)
+### - Update Task
+`Endpoint` : {{url}}/tasks/<task object id>
+
+`Authorization` : Inherit auth from parent
+
+`Headers` :  Content-Type : application/json
+
+`Body` (JSON)
+```json
+{
+"description" : "your new description",
+"completed" : <boolean>
+}
+```
+
+
+### - Delete Avatar
+`Endpoint` : {{url}}/users/me/avatar
+
+`Authorization` : Inherit auth from parent
 
 
 ## Installation

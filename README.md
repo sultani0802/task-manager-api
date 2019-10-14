@@ -36,26 +36,30 @@ if (pm.response.code === 200) {
     pm.environment.set('authToken', pm.response.json().newToken)
 }
 ```
-`Create User`, `Login User`
+`Create User` & `Login User`
 
 ## User Routes
 ### Create User (POST)
 `Headers` :  Content-Type : application/json
 
-`Body`
+`Body` (JSON)
 ```json
 {
     "name" : "your name",
-    "email" : "email",
+    "email" : "your email",
     "password" : "your password"
 }
 ```
+### Login User (POST)
+`Headers` :  Content-Type : application/json
 
-
-
-#### Get Requests
-#### Patch Requests
-#### Delete Requests
+`Body` (JSON)
+```json
+{
+    "email" : "your email",
+    "password" : "your password"
+}
+```
 
 
 ## Installation

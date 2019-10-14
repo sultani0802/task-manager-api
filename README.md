@@ -8,10 +8,21 @@ Task Manager is a web application that allows you to create users and tasks. I c
 - npm
 - Postman (or API tester of your choice)
 
-## Using Task Manager
+## Using Task Manager API
 ### Introduction
 Task Manager RESTful web service can be used via an API tester. Postman was used to test and use Task Manager so the setup and usage detailed below will be specific to Postman. Though, the API is hosted on Heroku and is accessible from any client.
 
+
+
+### Environment Setup  
+#### Set Environment Variables
+    - These variables are case sensitive
+    - url value must = https://sultani-task-manager.herokuapp.com
+    - authToken doesn't need to be initialized as it will be assigned a value once you have made a request to the API where an authentication token is returned
+![Postman Environment Variables](/postman_env_var.png)
+    
+    
+    
 #### User Routes
 
 

@@ -39,7 +39,7 @@ if (pm.response.code === 200) {
 `Create User` & `Login User`
 
 ## User Routes
-### Create User (POST)
+### - Create User (POST)
 `Headers` :  Content-Type : application/json
 
 `Body` (JSON)
@@ -50,7 +50,7 @@ if (pm.response.code === 200) {
     "password" : "your password"
 }
 ```
-### Login User (POST)
+### - Login User (POST)
 `Headers` :  Content-Type : application/json
 
 `Body` (JSON)

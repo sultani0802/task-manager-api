@@ -20,7 +20,12 @@ Task Manager RESTful web service can be used via an API tester. Postman was used
     - url value must = https://sultani-task-manager.herokuapp.com
     - authToken doesn't need to be initialized as it will be assigned a value once you have made a request to the API where an authentication token is returned
 ![Postman Environment Variables](/postman_env_var.png)
-    
+
+#### Create Request Collection
+    - The API has a total of 16 endpoints outlined below
+    - You only have to set the Bearer Token for this collection (pictured below)
+![Collection](/api_collection.png) ![Collection Setting](/edit_collection.png)
+
     
     
 #### User Routes

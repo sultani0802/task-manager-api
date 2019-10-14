@@ -38,8 +38,8 @@ if (pm.response.code === 200) {
 ```
 `Create User` & `Login User`
 
-## User Routes
-### - Create User (POST) 
+## User Routes (POST)
+### - Create User
 `Endpoint` : {{url}}/users
 
 `Headers` :  Content-Type : application/json
@@ -53,7 +53,7 @@ if (pm.response.code === 200) {
 }
 ```
 
-### - Login User (POST)
+### - Login User
 `Endpoint` : {{url}}/users/login
 
 `Headers` :  Content-Type : application/json
@@ -66,7 +66,7 @@ if (pm.response.code === 200) {
 }
 ```
 
-### - Logout (POST)
+### - Logout 
 `Endpoint` : {{url}}/users/logout
 
 `Authorization` : Inherit auth from parent
@@ -74,13 +74,13 @@ if (pm.response.code === 200) {
 `Headers` :  Content-Type : application/json
 
 
-### - Logout All Sessions (POST)
+### - Logout All Sessions 
 `Endpoint` : {{url}}/users/logoutAll
 
 `Headers` :  Content-Type : application/json
 
 
-### - Avatar Image Upload (POST)
+### - Avatar Image Upload
 `Endpoint` : {{url}}/users/me/avatar
 
 `Authorization` : Inherit auth from parent
@@ -89,6 +89,45 @@ if (pm.response.code === 200) {
 ```
 avatarUpload : image.jpg
 ```
+
+## User Routes (GET)
+### - Read User
+`Endpoint` : {{url}}/users/<user's object id>
+
+`Authorization` : Inherit auth from parent
+
+### - Read My Profile
+`Endpoint` : {{url}}/users/me
+
+`Authorization` : Inherit auth from parent
+
+### - Get Avatar By ID
+`Endpoint` : {{url}}/users/me
+
+`Authorization` : Inherit auth from parent
+
+## User Routes (PATCH)
+### - Update User
+`Endpoint` : {{url}}/users/<user's object id>/avatar
+
+`Authorization` : Inherit auth from parent
+
+
+## User Routes (DELETE)
+### - Delete User
+`Endpoint` : {{url}}/users/me
+
+`Authorization` : Inherit auth from parent
+
+`Headers` :  Content-Type : application/json
+
+### - Delete Avatar
+`Endpoint` : {{url}}/users/me/avatar
+
+`Authorization` : Inherit auth from parent
+
+
+
 
 ## Installation
 #### Clone the repo and install the dependencies

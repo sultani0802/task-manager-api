@@ -30,7 +30,17 @@ Task Manager RESTful web service can be used via an API tester. Postman was used
 ## Making API Requests
 ### User Routes
 #### Post Requests
-##### adwa
+##### Create User
+Paramaters
+- N/A
+Authorization
+- N/A
+Headers
+- Content-Type : application/json
+Body
+
+
+
 #### Get Requests
 #### Patch Requests
 #### Delete Requests

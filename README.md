@@ -41,6 +41,7 @@ if (pm.response.code === 200) {
 ## User Routes
 ### - Create User (POST) 
 `Endpoint` : {{url}}/users
+
 `Headers` :  Content-Type : application/json
 
 `Body` (JSON)
@@ -51,7 +52,10 @@ if (pm.response.code === 200) {
     "password" : "your password"
 }
 ```
+
 ### - Login User (POST)
+`Endpoint` : {{url}}/users/login
+
 `Headers` :  Content-Type : application/json
 
 `Body` (JSON)
@@ -63,18 +67,27 @@ if (pm.response.code === 200) {
 ```
 
 ### - Logout (POST)
+`Endpoint` : {{url}}/users/logout
+
 `Authorization` : Inherit auth from parent
+
 `Headers` :  Content-Type : application/json
+
 
 ### - Logout All Sessions (POST)
+`Endpoint` : {{url}}/users/logoutAll
+
 `Headers` :  Content-Type : application/json
 
-`Body` (JSON)
-```json
-{
-    "email" : "your email",
-    "password" : "your password"
-}
+
+### - Avatar Image Upload (POST)
+`Endpoint` : {{url}}/users/me/avatar
+
+`Authorization` : Inherit auth from parent
+
+`Body` (form-data)
+```
+avatarUpload : image.jpg
 ```
 
 ## Installation

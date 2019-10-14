@@ -39,7 +39,7 @@ if (pm.response.code === 200) {
 `Create User` & `Login User`
 
 ## User Routes
-### - Create User (POST)
+### - Create User (POST) `{{url}}/users`
 `Headers` :  Content-Type : application/json
 
 `Body` (JSON)
@@ -61,6 +61,20 @@ if (pm.response.code === 200) {
 }
 ```
 
+### - Logout (POST)
+`Authorization` : Inherit auth from parent
+`Headers` :  Content-Type : application/json
+
+### - Logout All Sessions (POST)
+`Headers` :  Content-Type : application/json
+
+`Body` (JSON)
+```json
+{
+    "email" : "your email",
+    "password" : "your password"
+}
+```
 
 ## Installation
 #### Clone the repo and install the dependencies

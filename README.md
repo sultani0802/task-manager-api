@@ -36,6 +36,7 @@ if (pm.response.code === 200) {
     pm.environment.set('authToken', pm.response.json().newToken)
 }
 ```
+`Create User`, `Login User`
 
 ## User Routes
 ### Create User (POST)

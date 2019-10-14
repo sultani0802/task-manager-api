@@ -31,9 +31,8 @@ Task Manager RESTful web service can be used via an API tester. Postman was used
 ### User Routes
 #### Post Requests
 ##### Create User
-`Paramaters` : N/A
-`Authorization` : N/A
 `Headers` :  Content-Type : application/json
+
 `Body`
 ```json
 {

@@ -141,6 +141,30 @@ avatarUpload : image.jpg
 }
 ```
 
+## User Routes (GET)
+### - Read Task
+`Endpoint` : {{url}}/tasks/<task object id>
+
+`Authorization` : Inherit auth from parent
+
+### - Read All My Tasks
+`Endpoint` : {{url}}/tasks
+
+`Authorization` : Inherit auth from parent
+
+`Params` : 
+```
+key: completed
+value: true/false
+
+key: sortBy
+value: createdAt_desc/createdAt_asc 
+
+```
+
+`Authorization` : Inherit auth from parent
+
+
 ## Task Routes (UPDATE)
 ### - Update Task
 `Endpoint` : {{url}}/tasks/<task object id>
@@ -158,10 +182,12 @@ avatarUpload : image.jpg
 ```
 
 
-### - Delete Avatar
-`Endpoint` : {{url}}/users/me/avatar
+## Task Routes (DELETE)
+### - Delete Task
+`Endpoint` : {{url}}/tasks/<task object id>
 
 `Authorization` : Inherit auth from parent
+
 
 
 ## Installation

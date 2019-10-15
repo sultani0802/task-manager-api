@@ -141,7 +141,7 @@ avatarUpload : image.jpg
 }
 ```
 
-## User Routes (GET)
+## Task Routes (GET)
 ### - Read Task
 `Endpoint` : {{url}}/tasks/<task object id>
 
@@ -188,7 +188,9 @@ value: createdAt_desc/createdAt_asc
 
 `Authorization` : Inherit auth from parent
 
-
+##
+##
+##
 
 ## Installation
 #### Clone the repo and install the dependencies

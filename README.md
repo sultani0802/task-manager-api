@@ -30,13 +30,13 @@ Task Manager RESTful web service can be used via an API tester. Postman was used
 ## Making API Requests
 
 ### Request Tests
-The following requests require you to add this code to the `Tests` tab for the request
+The following requests `Create User` & `Login User` require you to add this code to the `Tests` tab for the request
 ```js
 if (pm.response.code === 200) {
     pm.environment.set('authToken', pm.response.json().newToken)
 }
 ```
-`Create User` & `Login User`
+
 
 ## User Routes (POST)
 ### - Create User

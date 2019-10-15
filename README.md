@@ -1,6 +1,10 @@
 - [About](#about)
 - [Requirements](#requirements)
-
+- [Using Task Manager API](#using-task-manager-api)
+    * [Introduction](#introduction)
+    * [Environment Setup](#environment-setup)
+- [Making API Requests](#making-api-requests)
+    * [User Routes (POST)](#user-routes-post)
 # Task Manager
 
 ## About

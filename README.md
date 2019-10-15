@@ -5,6 +5,16 @@
     * [Environment Setup](#environment-setup)
 - [Making API Requests](#making-api-requests)
     * [User Routes (POST)](#user-routes-post)
+    * [User Routes (GET)](#user-routes-get)
+    * [User Routes (PATCH)](#user-routes-patch)
+    * [User Routes (DELETE)](#user-routes-delete)
+    * [Task Routes (POST)](#task-routes-post)
+    * [Task Routes (GET)](#task-routes-get)
+    * [Task Routes (UPDATE)](#task-routes-update)
+    * [Task Routes (DELETE)](#task-routes-delete)
+- [Installation](#installation)
+- [How to](#how-to)
+
 # Task Manager
 
 ## About

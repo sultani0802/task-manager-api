@@ -1,3 +1,6 @@
+- [About](#about)
+- [Requirements](#requirements)
+
 # Task Manager
 
 ## About
@@ -162,7 +165,6 @@ value: createdAt_desc/createdAt_asc
 
 ```
 
-`Authorization` : Inherit auth from parent
 
 
 ## Task Routes (UPDATE)
